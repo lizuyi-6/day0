@@ -1,6 +1,7 @@
 # Day0
 
-Early experimental project repository.
+早期实验性项目仓库，暂无活跃开发。
 
----
-*Archived - No active development*
+## 说明
+
+此仓库用于存档和实验，仅作历史记录保留。
