@@ -1,0 +1,54 @@
+site_name: Hello LLM
+site_description: 用图解、直觉与最小代码，从零理解大语言模型
+site_author: lizuyi-6
+repo_url: https://github.com/lizuyi-6/day0
+repo_name: lizuyi-6/day0
+
+nav:
+  - 首页: index.md
+  - 00 · 先建立脑内地图: 00_start/index.md
+  - 01 · Token 与 Embedding: 01_token_embedding/index.md
+  - 02 · 下一个 Token 的概率: 02_next_token/index.md
+  - 03 · Transformer 与 Attention: 03_attention/index.md
+  - 04 · 训练: 04_training/index.md
+  - 05 · 原生多模态: 05_multimodal/index.md
+  - 06 · Context、RAG 与长期记忆: 06_memory_rag/index.md
+  - 07 · Agent 与工具调用: 07_agent/index.md
+  - 08 · 本地与云端模型: 08_local_cloud/index.md
+  - 09 · 常见误解: 09_misconceptions/index.md
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - toc:
+      permalink: true
